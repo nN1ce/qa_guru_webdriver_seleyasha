@@ -9,9 +9,9 @@ driver.implicitly_wait(2)
 
 driver.get('https://google.com./ncr')
 
-# driver.find_element(By.CSS_SELECTOR, '[name=q]').send_keys('selene')
-# driver.find_element(By.CSS_SELECTOR, '[name=q]').send_keys(Keys.ENTER)
-#
+driver.find_element(By.CSS_SELECTOR, '[name=q]').send_keys('selene')
+driver.find_element(By.CSS_SELECTOR, '[name=q]').send_keys(Keys.ENTER)
+
 def find_element(driver):
     return driver.find_element(By.CSS_SELECTOR, '[name=q]')
 
